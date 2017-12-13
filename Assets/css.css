@@ -1,0 +1,7 @@
+/*adding background image to jumbotron*/
+.jumbo {
+	margin-top:20px;
+	background-image: url("Assets/Images/JR.jpg");
+	background-size: cover;
+
+}

@@ -1,0 +1,28 @@
+/*adding background image to jumbotron*/
+.jumbotron {
+	margin-top:20px;
+	background-image: url("../Images/trains_.jpg");
+	background-size: cover;
+	/*opacity:0.5;*/
+	
+}
+
+.text-center {
+	color: #0a8c0d!important;
+	font-size: 25px;
+	font-weight: bold;
+	text-shadow: 2px 2px #ffffff;
+}
+
+
+.panel-primary>.panel-heading {
+	color: #fff;
+    background-color: #0a8c0d;
+    border-color: #0a8c0d;
+}
+
+.btn-primary {
+	color: #fff;
+    background-color: #0a8c0d;
+    border-color: #0a8c0d;
+}
