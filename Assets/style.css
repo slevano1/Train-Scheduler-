@@ -1,17 +1,18 @@
 /*adding background image to jumbotron*/
 .jumbotron {
 	margin-top:20px;
-	background-image: url("../Images/trains_.jpg");
-	background-size: cover;
+	background-image: url("../Images/suica.png");
+	
 	/*opacity:0.5;*/
+	box-shadow: 0 18px 26px -6px #222222;
 	
 }
 
 .text-center {
 	color: #0a8c0d!important;
-	font-size: 25px;
+	font-size: 75px;
 	font-weight: bold;
-	text-shadow: 2px 2px #ffffff;
+	text-shadow: 3px 3px 0px #e9f1ff, 2px 2px 0px #5c5f72;
 }
 
 
@@ -25,4 +26,59 @@
 	color: #fff;
     background-color: #0a8c0d;
     border-color: #0a8c0d;
+}
+
+/*color to scrolling text*/
+p {
+	color: #0a8c0d!important;
+	
+
+	/*text-shadow: 3px 3px 0px #e9f1ff, 2px 2px 0px #5c5f72;*/
+}
+
+/*scrolling text courtesy of https://codepen.io/Murtaxa/pen/egrRbN (I modified it a bit to suit my project*/
+.scroll-left {
+height: 75px; 
+overflow: hidden;
+position: relative;
+}
+.scroll-left p {
+position: absolute;
+font-size: 40px;
+font-weight: bold;
+text-shadow: 3px 3px 0px #e9f1ff, 2px 2px 0px #5c5f72;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 75px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%); 
+transform:translateX(100%);
+/* Apply animation to this element */ 
+-moz-animation: scroll-left 10s linear infinite;
+-webkit-animation: scroll-left 10s linear infinite;
+animation: scroll-left 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
+}
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
+}
 }
