@@ -88,4 +88,9 @@
 	 var nextTrainTime = moment().add(minsUntilTrain, "minutes"); 
   console.log("Next arrival: " + moment(nextTrainTime).format("hh:mm")); 
 
+  $("#train-table > tbody").append("<tr><td>" + newTrainName + "</td><td>" + newDestination +
+   "</td><td>" + newFrequency + "</td><td>" + moment(nextTrainTime).format("hh:mm A") + 
+   "</td><td>" + minsUntilTrain); 
+
+
 	});
